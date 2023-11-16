@@ -7,6 +7,9 @@ export default defineNuxtConfig({
     head: {
       title: "Prima Pro",
       charset: 'utf-8',
+      meta: [
+        { name: 'description', content: 'A digital learning enviorment for Prima Nova.' }
+      ],
       viewport: 'width=device-width, initial-scale=1',
       htmlAttrs: {
         lang: 'en'
