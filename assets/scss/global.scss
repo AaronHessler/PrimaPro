@@ -13,7 +13,7 @@ a {
     transition: .4s;
     transition-timing-function: cubic-bezier(.87,-.41,.19,1.44);
     &:hover {
-        font-style:oblique;
+        font-style: oblique 7deg;
         filter: brightness(200%);
         margin: 0px 10px;
         scale: 1.2;
@@ -33,6 +33,8 @@ a {
     font-family: 'Roboto Slab', serif;
 }
 
-//.router-link-exact-active {
-    //Do later cause duh
-//}
+.router-link-exact-active {
+    font-weight: 600;
+    margin: 0px 10px;
+    scale: 1.2;
+}

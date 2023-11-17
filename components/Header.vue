@@ -1,11 +1,11 @@
 <template>
     <div class="header w-screen">
-        <nuxt-link to="/">
+        <nuxt-link aria-label="Go to home" to="/">
             <img src="@/assets/svgs/logo.svg" alt="">
         </nuxt-link>
-        <nuxt-link to="/login">Login</nuxt-link>
-        <nuxt-link to="/learn">Learn</nuxt-link>
-        <nuxt-link to="/test">Test</nuxt-link>
+        <nuxt-link aria-label="Go to login page" to="/login">Login</nuxt-link>
+        <nuxt-link aria-label="Learn" to="/learn">Learn</nuxt-link>
+        <nuxt-link aria-label="Test your knowledge" to="/test">Test</nuxt-link>
     </div>
 </template>
 
