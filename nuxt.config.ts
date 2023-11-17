@@ -23,7 +23,6 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  css: ["@/assets/scss/global.scss"],
   vite: {
     css: {
       preprocessorOptions: {
@@ -33,4 +32,5 @@ export default defineNuxtConfig({
       },
     },
   },
+  css: ["@/assets/scss/global.scss"],
 })
