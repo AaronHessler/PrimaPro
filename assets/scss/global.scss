@@ -7,3 +7,32 @@ img, p, h1, h2, h3, h4, h5, h5, h6 {
     -ms-user-select: none;
     pointer-events: none;
 }
+
+a {
+    font-weight: 400;
+    transition: .4s;
+    transition-timing-function: cubic-bezier(.87,-.41,.19,1.44);
+    &:hover {
+        font-style:oblique;
+        filter: brightness(200%);
+        margin: 0px 10px;
+        scale: 1.2;
+    }
+    &:active {
+        transition-timing-function: inherit;
+        margin: 0px -10px;
+        scale: .9;
+    }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    color: $clr-default;
+    font-family: 'Roboto Slab', serif;
+}
+
+//.router-link-exact-active {
+    //Do later cause duh
+//}
