@@ -13,7 +13,7 @@ import type { Btn } from '#build/components';
 
 <style lang="scss" scoped>
     #vocab {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
 
         svg {
             margin-right: 8px;

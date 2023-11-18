@@ -1,6 +1,6 @@
 <template>
     <OptionsPanel title="Test" icon="heroicons-solid:flag">
-        <Btn>Select vocabulary</Btn>
+        <Btn id="vocab"><Icon name="heroicons-solid:arrow-narrow-right" />Select Vocab</Btn>
     </OptionsPanel>
 </template>
 
@@ -23,4 +23,7 @@
             gap: 10px;
         }
     }
+    svg {
+            margin-right: 8px;
+        }
 </style>
