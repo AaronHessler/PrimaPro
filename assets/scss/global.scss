@@ -8,33 +8,44 @@ img, p, h1, h2, h3, h4, h5, h5, h6 {
     pointer-events: none;
 }
 
-a {
-    font-weight: 400;
-    transition: .4s;
-    transition-timing-function: cubic-bezier(.87,-.41,.19,1.44);
-    &:hover {
-        font-style: oblique 7deg;
-        filter: brightness(200%);
-        margin: 0px 10px;
-        scale: 1.2;
-    }
-    &:active {
-        transition-timing-function: inherit;
-        margin: 0px -10px;
-        scale: .9;
-    }
-}
-
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
     color: $clr-default;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-.router-link-exact-active {
-    font-weight: 600;
-    margin: 0px 10px;
-    scale: 1.2;
+
+html {font-size: 100%;} /*16px*/
+
+body {
+  background: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #000000;
 }
+
+p {margin-bottom: 1rem;}
+
+h1, h2, h3, h4, h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {font-size: 2.441rem;}
+
+h3 {font-size: 1.953rem;}
+
+h4 {font-size: 1.563rem;}
+
+h5 {font-size: 1.25rem;}
+
+small, .text_small {font-size: 0.8rem;}

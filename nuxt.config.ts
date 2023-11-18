@@ -1,9 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    'nuxt-icon'
   ],
   app: {
+    pageTransition: {
+      name: 'page',
+      mode: 'out-in' // default
+    },
     head: {
       title: "Prima Pro",
       charset: 'utf-8',

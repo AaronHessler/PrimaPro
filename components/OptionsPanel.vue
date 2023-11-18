@@ -1,8 +1,23 @@
 <template>
-    <OptionsPanel title="Test" icon="heroicons-solid:flag">
-        <Btn>Select vocabulary</Btn>
-    </OptionsPanel>
+    <div id="wrapper">
+        <div id="container">
+            <h1>
+                <Icon id="icon" :name=icon />
+                {{ title }}
+            </h1>
+            <slot />
+        </div>
+    </div>
 </template>
+
+<script>
+  export default {
+    props: [
+      "title",
+      "icon"
+    ]
+  }
+</script>
 
 <style lang="scss" scoped>
     #wrapper {
@@ -12,8 +27,9 @@
         height: 100vh;
         width: 100vw;
     }
-    #login {
+    #container {
         display: flex;
+        gap: 7px;
         align-items: center;
         flex-direction: column;
         form {

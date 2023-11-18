@@ -17,6 +17,9 @@
 
 <style lang="scss" scoped>
     .header {
+        z-index: 100;
+        position: absolute;
+        top: 0;
         gap: 20px;
         display: flex;
         justify-content: center;
@@ -29,4 +32,26 @@
             margin-right: 10px;
         }
     }
+    a {
+        font-family: 'Roboto Slab', serif;
+        font-weight: 400;
+        transition: .4s;
+        transition-timing-function: cubic-bezier(.87,-.41,.19,1.44);
+        &:hover {
+            font-style: oblique 7deg;
+            filter: brightness(200%);
+            margin: 0px 10px;
+            scale: 1.2;
+        }
+        &:active {
+            transition-timing-function: inherit;
+            margin: 0px -10px;
+            scale: .9;
+        }
+    }
+.router-link-exact-active {
+    font-weight: 600;
+    margin: 0px 10px;
+    scale: 1.2;
+}
 </style>
