@@ -1,6 +1,9 @@
 <template>
     <OptionsPanel title="Test" icon="heroicons-solid:flag">
-        <Btn>Select vocabulary</Btn>
+        <Btn id="selection"><Icon name="heroicons-solid:dots-horizontal"/>Select lesson</Btn>
+        <Btn><Icon name="heroicons-solid:lightning-bolt"/>Lightning Exam</Btn>
+        <Btn><Icon name="heroicons-solid:library"/>Realistic Exam</Btn>
+        <Btn><Icon name="heroicons-solid:fire"/>Challenge Mode</Btn>
     </OptionsPanel>
 </template>
 
@@ -22,5 +25,8 @@
             flex-direction: column;
             gap: 10px;
         }
+    }
+    #selection {
+        margin-bottom: 20px;
     }
 </style>

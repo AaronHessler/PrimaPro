@@ -28,7 +28,7 @@ button:before {
   background-color: $clr-default;
   content: "";
   display: inline-block;
-  height: 2.5px;
+  height: 2px;
   margin-right: 10px;
   transition: all .5s cubic-bezier(.25,.8,.25,1);
   width: 0;

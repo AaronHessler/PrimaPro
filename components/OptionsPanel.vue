@@ -19,7 +19,7 @@
   }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
     #wrapper {
         display: flex;
         justify-content: center;
@@ -38,5 +38,8 @@
             flex-direction: column;
             gap: 10px;
         }
+    }
+    svg {
+        margin-right: 10px;
     }
 </style>
