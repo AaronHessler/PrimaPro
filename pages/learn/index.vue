@@ -11,6 +11,9 @@
 <script setup>
     let lesson = await useCookie("lesson");
     let lessonUrl = "/learn/vocab/" + lesson.value;
+    if (!lesson.value) {
+        lessonUrl = "/learn";
+    }
 </script>
 
 <style lang="scss" scoped>
