@@ -1,6 +1,8 @@
 <template>
     <div>
-        <OptionsPanel :title=lesson></OptionsPanel>
+        <OptionsPanel icon="heroicons-solid:at-symbol" :title=lesson>
+        <p>This is were the lessons would start if I wasnt a lazy fu-</p>
+        </OptionsPanel>
     </div>
 </template>
 
