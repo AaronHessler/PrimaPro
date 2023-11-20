@@ -1,15 +1,23 @@
 <template>
-    <button>
-        <slot />
-    </button>
+  <nuxt-link :to="href" v-if="href !== null && href !== ''">
+      <slot />
+  </nuxt-link>
+  <button v-else>
+      <slot />
+  </button>
 </template>
 
-<script>
-
+<script setup>
+  const { href } = defineProps({
+    href: {
+      type: String,
+      default: null
+    }
+  })
 </script>
 
 <style lang="scss" scoped>
-button {
+button, a {
   color: $clr-default;
   align-items: center;
   cursor: default;
@@ -24,7 +32,7 @@ button {
   transition: .6s;
 }
 
-button:before {
+button:before, a:before {
   background-color: $clr-default;
   content: "";
   display: inline-block;
@@ -34,11 +42,11 @@ button:before {
   width: 0;
 }
 
-button:hover:before {
+button:hover:before, a:hover:before {
   background-color: $clr-default;
   width: 3rem;
 }
-button:active:before {
+button:active:before, a:active:before {
   width: 2rem;
 }
 </style>

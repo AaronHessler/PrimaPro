@@ -1,7 +1,7 @@
 <template>
     <div>
-        <OptionsPanel title="Login" icon="heroicons-solid:finger-print">
-            <Btn href="/wip">Authenticate with Omikron</Btn>
+        <OptionsPanel icon="heroicons-solid:exclamation" title="Identity Platform">
+            <p>The Omikron Identity Platform is offline.</p>
         </OptionsPanel>
     </div>
 </template>
