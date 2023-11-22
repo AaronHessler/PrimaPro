@@ -1,7 +1,7 @@
 <template>
     <div id="wrapper">
         <div id="container">
-            <h1>
+            <h1 class="text-center">
                 <Icon id="icon" :name=icon />
                 {{ title }}
             </h1>

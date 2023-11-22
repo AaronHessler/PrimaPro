@@ -1,21 +1,45 @@
 <template>
     <div id="wrapper">
-        <button><Icon name="heroicons-solid:chevron-left"/></button>
-        <input v-model="value" type="number">
-        <button><Icon name="heroicons-solid:chevron-right"/></button>
+        <button @click="decrement"><Icon name="heroicons-solid:chevron-left"/></button>
+        <input type="number" v-model="counter">
+        <button @click="increment"><Icon name="heroicons-solid:chevron-right"/></button>
     </div>
 </template>
 
 <script>
-    let value = 0;
-    setInterval(() => {
-        value += 1;
-    }, 3000);
-    export default {
-        
+export default {
+    data() {
+        return {
+            counter: 0
+        }
+    },
+    methods: {
+        increment() {
+            if (this.counter < 45) {
+                this.counter++;
+            }
+        },
+        decrement() {
+            if (this.counter > 0) {
+                this.counter--;
+            }
+        }
+    },
+    watch: {
+        counter(newVal) {
+            if (newVal < 0) {
+                this.counter = 0;
+            } else if (newVal > 45) {
+                this.counter = 45;
+            }
+        }
     }
+}
 </script>
 
+<!-- Your existing styles here -->
+
+<!-- Your existing styles here -->
 <style lang="scss" scoped>
     #wrapper {
         display: flex;
@@ -27,6 +51,7 @@
 
         button {
             transition: .3s;
+            font-size: 30px;
             &:hover {
                 font-size: 40px;
             }
@@ -38,11 +63,14 @@
 
 
         input {
+            font-weight: 600;
             width: 50px;
             height: 50px;
             text-align: center;
             font-size: 1.5rem;
             -moz-appearance:textfield; /* Firefox */
+            appearance: textfield; /* Standard */
+
 
         }
 
