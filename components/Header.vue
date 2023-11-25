@@ -28,6 +28,7 @@
         padding: 20px 30px;
 
         img {
+            height: auto;
             width: 100px;
             margin-right: 10px;
         }
